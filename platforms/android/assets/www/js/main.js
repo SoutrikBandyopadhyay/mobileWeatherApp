@@ -30,7 +30,7 @@ function loadWeather(location,woeid){
       $(".wind-speed").html(wind);
     },
     error: function(){
-      
+
     }
   });
 }
