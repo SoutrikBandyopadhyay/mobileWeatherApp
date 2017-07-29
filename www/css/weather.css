@@ -1,30 +1,72 @@
 div.app {
-  background-color: #d5cfe4;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  display: grid;
+  background-size: cover;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vw 1fr;
+  grid-template-areas: "header header" "icon info";
+  font-family: "Roboto"; }
   div.app div.header {
-    height: 50vh;
+    grid-area: header;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Roboto";
+    font-size: 36pt;
+    font-weight: 200;
+    color: white; }
+    div.app div.header p {
+      font-size: 20pt; }
+  div.app div.weather-img {
+    grid-area: icon;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    div.app div.header div.weather-img {
-      width: 50vw; }
-      div.app div.header div.weather-img img {
-        min-width: 50%;
-        min-height: 50%; }
-    div.app div.header div.place {
-      font-family: Roboto; }
-      div.app div.header div.place h1 {
-        font-size: 72px; }
+  div.app div.info {
+    grid-area: info;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20%; }
+    div.app div.info div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-weight: 200; }
+
+#icon {
+  width: 200%;
+  border-right: 0.5px rgba(0, 0, 0, 0.56) solid; }
+
+#windImage, #dropletImage {
+  width: 20%; }
 
 /*# sourceMappingURL=weather.css.map */

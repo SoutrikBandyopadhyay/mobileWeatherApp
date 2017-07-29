@@ -41,65 +41,29 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
     <link rel = "stylesheet" href = "css/reset.css">
     <link rel = "stylesheet" href = "css/weather.css">
-    <title>Hello World</title>
+    <title>Weather App</title>
 </head>
 
 <body>
 
   <div class="app">
     <div class="header">
-      <div class="weather-img"></div>
-      <div class="tempcard">
-        <h1 class="temp"></h1>
-        <p class="place"></p>
-
-      </div>
-
+      <h1 class="temp"></h1>
+      <p class="place"></p>
     </div>
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-<!--
-  <div class = "flexer">
-    <div class = "tempcard">
-      <h1 class = "temp"></h1>
-      <p class = "place"></p>
-    </div>
-    <div class = "tempright">
-      <div class = "weather-img">
-
+    <div class="weather-img"></div>
+    <div class="info">
+      <div>
+        <img id= "dropletImage">
+        <p class = "humidity"></p>
       </div>
-      <div class = "misc">
-        <div>
-          <img src = "../img/droplet.svg">
-          <p class = "humidity"></p>
+      <div>
+        <img id="windImage">
+        <div class = "wind-speed">
         </div>
-        <div>
-          <img src = "../img/wind.svg">
-          <div class = "wind-speed">
-          </div>
-        <div>
+      <div>
     </div>
-  </div> -->
+  </div>
 
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>

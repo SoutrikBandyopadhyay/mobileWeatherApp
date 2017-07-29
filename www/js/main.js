@@ -19,7 +19,8 @@ function loadWeather(location,woeid){
     success: function(weather){
       city = weather.city;
       temp = weather.temp + "&deg;<small>C</small>"; //23°
-      wcode = "<img src = 'weathericons/" +weather.code + ".svg'>";
+      wcode = "<img src = 'weathericons/" +weather.code + ".svg' id = 'icon'>";
+
       wind = "<p>" + weather.wind.speed + "</p><p>" + weather.units.speed + "</p>";
       humidity = weather.humidity + " %";
 
@@ -28,6 +29,11 @@ function loadWeather(location,woeid){
       $(".weather-img").html(wcode);
       $(".humidity").html(humidity);
       $(".wind-speed").html(wind);
+      $("#dropletImage").attr({"src":"img/Droplet.svg"});
+      $("#windImage").attr({"src":"img/Wind.svg"});
+      $(".app").attr({"style":"background-image:url('img/hero.jpg')"});
+
+
     },
     error: function(){
 
